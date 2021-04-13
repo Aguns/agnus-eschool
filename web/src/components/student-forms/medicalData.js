@@ -35,7 +35,7 @@ const StudentMedicalData = ({ message = null }) => {
     },
     {
       label: "Observações",
-      name: "comments",
+      name: "notes",
       type: "textarea",
       placeholder: "Tem Objservações?",
     },
