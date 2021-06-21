@@ -31,8 +31,11 @@ export default class Student {
     @Column({length: 20, nullable:false })
     gender:string;
 
-    @Column()
+    @Column({ length: 20, nullable: true })
     status?: string;
+
+    @Column()
+    json?:string;
     
     @OneToMany(()=> StudentParent, parent => parent.student,{
         cascade:['insert','update']
